@@ -2,50 +2,36 @@
 <html>
   <head>
     <title>Mkubwa Ferra</title>
-    <style>
-      h1 {
-        font-size: 40px;
-        font-family: Roboto;
-        font-weight: normal;
-        color: rgb(100, 0, 255);
-        text-align: center;
-        
-      }
-      #Banner {
-       width: 100%;
-        height: 360px;
-        object-fit: cover;
-      }
-      h2{
-        font-family: Roboto;
-        font-size: 32px;
-        color: rgb(190, 200, 155)
-      }
-      .bodytext{
-        font-famil: Roboto;
-        color: rgb(50, 90, 70)
-      }
-     #container{
-       max-width: 720px;
-       margin: 0 auto;
-     } 
-    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    #banner{
+     height: 360px;
+     width: 100%;
+     object-fit: cover;
+    }
+  </style>
   </head>
   <body>
-    <div id="container">
-      <h1>Mkubwa Ferra Careers</h1>
-      <img id= "Banner" src = "https://361ec65a-6986-4aa0-be55-a27c74501d6f-00-3qux5545ftmea.worf.replit.dev/static/Banner.jpg" height="320px" >
-      <h2>About FC Olgumi</h2>
-      <p class="bodytext">
+    <div class="container">
+      <h1 class="text-center mt-2 mb-4" >Mkubwa Ferra Careers</h1>
+      <img class="img-fluid" id= "banner" src = "https://361ec65a-6986-4aa0-be55-a27c74501d6f-00-3qux5545ftmea.worf.replit.dev/static/Banner.jpg" height="320px" >
+      <h2 class="text-center mt-2 mb-4">About FC Olgumi</h2> 
+      <p class="lead">
         Tembo Football Team is a professional football club based in Tanzania, known for its competitive spirit and   passionate fan base. The team has made significant strides in local and regional tournaments, showcasing a blend of skilled players and dedicated coaching staff. With a commitment to developing young talent and promoting the sport in the community, Tembo aims to establish itself as a formidable force in Tanzanian football. The team's colors and emblem       reflect its rich heritage and ambition to achieve success on and off the pitch.
       </p>
   
-      <h2>Team History</h2>
-      <p class="bodytext">ToDO</p>
+      <h2 class="text-center mt-2 mb-4">Open Positions</h2>
+      <div>
+        {% for job in jobs %}
+        {% include 'jobs.html' %}
+        {% endfor %}
+      </div>
     </div>
-    <div style="text-align:center">
-      <button>Contact Us</button>
-      <p>Copyright 2025, Mkubwa Ferra</p>
+    <div class="text-center">
+      <button class="btn btn-primary btn-lg"">Contact Us</button>
+      <p class="mt-4">Copyright 2025, Mkubwa Ferra</p>
     </div>
   </body>
 </html>
