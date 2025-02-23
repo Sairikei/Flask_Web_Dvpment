@@ -12,19 +12,19 @@ JOBS = [{
     'id': 2,
     'title': 'Data Scientist',
     'location': 'Mombasa Kenya',
-    'salary': 'Ksh. 2,000,000'
+    'salary': 'Ksh. 2,300,000'
 },
 {
     'id': 3,
     'title': 'Front-end engineer',
     'location': 'Remote, Kenya',
-    'salary': 'Ksh. 2,000,000'
+    'salary': 'Ksh. 900,000'
 },
 {
     'id': 4,
     'title': 'Back-end Engineer',
     'location': 'Nairobi Kenya',
-    #'salary': 'Ksh. 2,000,000'
+    #'salary': 'Ksh. 1,500,000'
 }
 ]
 
