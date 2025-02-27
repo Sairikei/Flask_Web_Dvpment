@@ -10,18 +10,21 @@
      height: 360px;
      width: 100%;
      object-fit: cover;
+      margin-bottom: 16px;
     }
   </style>
   </head>
+  {% include 'nav.html' %}
   <body>
+     <img class="img-fluid" id= "banner" src = "https://361ec65a-6986-4aa0-be55-a27c74501d6f-00-3qux5545ftmea.worf.replit.dev/static/Banner.jpg" height="320px" >
     <div class="container">
       <h1 class="text-center mt-2 mb-4" >Mkubwa Ferra Careers</h1>
-      <img class="img-fluid" id= "banner" src = "https://361ec65a-6986-4aa0-be55-a27c74501d6f-00-3qux5545ftmea.worf.replit.dev/static/Banner.jpg" height="320px" >
-      <h2 class="text-center mt-2 mb-4">About FC Olgumi</h2> 
+    <div style="margin-bottom:16px;">  
       <p class="lead">
         Tembo Football Team is a professional football club based in Tanzania, known for its competitive spirit and   passionate fan base. The team has made significant strides in local and regional tournaments, showcasing a blend of skilled players and dedicated coaching staff. With a commitment to developing young talent and promoting the sport in the community, Tembo aims to establish itself as a formidable force in Tanzanian football. The team's colors and emblem       reflect its rich heritage and ambition to achieve success on and off the pitch.
       </p>
-  
+      <img src="/static/playing.jpg" style="height: 320px; border-radius: 4px;">"
+    </div>
       <h2 class="text-center mt-2 mb-4">Openings</h2>
       <div>
         {% for job in jobs %}
@@ -31,7 +34,8 @@
     </div>
     <div class="text-center">
       <button class="btn btn-primary btn-lg"">Contact Us</button>
-      <p class="mt-4">Copyright 2025, Mkubwa Ferra</p>
+
     </div>
+    {% include 'footer.html' %}
   </body>
 </html>
